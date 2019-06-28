@@ -1,0 +1,72 @@
+.app-section {
+    text-align: center;
+}
+
+
+/* #############  FONT  ############# */
+.app-section > p {
+    color: #888888;
+    margin: 0;
+}
+.section-header {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 16px;
+    color: #888888;
+}
+.section-header.first {
+    padding-top: 49px;
+    padding-bottom: 50px;
+}
+.section-header.second {
+    padding-top: 174px;
+    padding-bottom: 44px;
+}
+.section-header.small {
+    padding-bottom: 39px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+/* #############  BUTTON  ############# */
+.primary-button {
+    background-color: #ffffff;
+    color: #888888;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+    width: 260px;
+    height: 39px;
+}
+form > .primary-button {
+    margin-top: 50px;
+    margin-bottom: 142px;
+}
+
+
+/* #############  FORM ############# */
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-item {
+    text-align: left;
+}
+.input-item > input {
+    height: 30px;
+    width: 340px;
+    border: 1px solid #707070;
+}
+.input-label {
+    margin: 0 0 7px 0;
+    font-size: 12px;
+    line-height: 14px;
+    color: #888888;
+}
+.input-item:last-child {
+    margin-left: 40px !important;
+}

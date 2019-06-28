@@ -6,14 +6,21 @@
 	<title>teste-dev</title>
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
 	<link rel="stylesheet" type="text/css" href="styles/header.css">
+	<link rel="stylesheet" type="text/css" href="styles/section.css">
 	<link rel="stylesheet" type="text/css" href="styles/footer.css">
 </head>
 
 <body>
 	<header class="app-header">
-		<p class="medium-header">uma seleção de produtos</p>
-		<p class="large-header">especial para você</p>
-		<p class="small-header">Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p>
+		<p class="medium-header">
+			uma seleção de produtos
+		</p>
+		<p class="large-header">
+			especial para você
+		</p>
+		<p class="small-header">
+			Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!
+		</p>
 		<nav>
 			<button>Conheça a Linx</button>
 			<button>Ajude o algorítmo</button>
@@ -24,30 +31,50 @@
 
 	<section class="app-section">
 		<div class="products-container">
-			<p>Sua seleção especial</p>
+			<p class="section-header first">
+				Sua seleção especial
+			</p>
 			<!--INSERT GRID HERE-->
-			<button>Ainda mais produtos aqui!</button>
+			<button class="primary-button">
+				Ainda mais produtos aqui!
+			</button>
 		</div>
 
 		<div class="newsletter-container">
-			<p>Compartilhe a novidade</p>
-			<p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
-			<form class="input-container">
-				<div class="input-item">
-					<span>Nome do seu amigo:</span>
-					<input type="text" name="friendName">
+			<p class="section-header second">
+				Compartilhe a novidade
+			</p>
+			<p class="section-header small">
+				Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!
+			</p>
+			<form>
+				<div class="input-container">
+					<div class="input-item">
+						<p class="input-label">
+							Nome do seu amigo:
+						</p>
+						<input type="text" name="friendName">
+					</div>
+					<div class="input-item">
+						<p class="input-label">
+							E-mail:
+						</p>
+						<input type="email" name="friendEmail">
+					</div>
 				</div>
-				<div class="input-item">
-					<span>E-mail:</span>
-					<input type="email" name="friendEmail">
-				</div>
-				<button>Enviar agora</button>
+				<button class="primary-button ">
+					Enviar agora
+				</button>
 			</form>
 		</div>
 	</section>
 
 	<footer class="app-footer">
-		<p>Testando suas habilidades em HTML, CSS e JS.<br/>Linx Impulse<br/>2019</p>
+		<p>
+			Testando suas habilidades em HTML, CSS e JS.<br/>
+			Linx Impulse<br/>
+			2019
+		</p>
 	</footer>
 	<script src="scripts/fetchContent.js"></script>
 </body>
