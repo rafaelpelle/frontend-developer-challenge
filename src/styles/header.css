@@ -1,5 +1,6 @@
 .app-header {
     background-color: #707070;
+    border: 1px solid #707070;
     width: 100%;
     text-align: center;
 }
@@ -13,18 +14,18 @@
 .large-header {
     font-size: 40px;
     font-weight: bold;
-    line-height: 1.49em;
+    line-height: 49px;
 }
 .medium-header {
     font-size: 20px;
     font-weight: normal;
-    line-height: 1.24em;
+    line-height: 24px;
     padding-top: 69px !important;
 }
 .small-header {
     font-size: 14px;
     font-weight: normal;
-    line-height: 1.16em;
+    line-height: 16px;
     margin-top: 24px !important;
     margin-bottom: 50px !important;
 }
@@ -40,7 +41,7 @@
     border: 1px solid #707070;
     border-radius: 4px;
     font-size: 14px;
-    line-height: 1.16em;
+    line-height: 16px;
     height: 40px;
     width: 160px;
     margin-left: 40px;
