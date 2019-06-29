@@ -11,8 +11,13 @@
 // 	}
 // }
 
+
+// Will create a product element and its child components,
+// then append it to the product-grid.
 function appendProductCard(product) {
-	const imgSrc = "http://" + product.image.slice(-product.image.length+2)
+	// The http: prefix is missing on the product.image URL,
+	// hence it will be added here.
+	const imgSrc = "http:" + product.image
 	const image = document.createElement("img")
 	image.className = "product-img"
 	image.src = imgSrc
