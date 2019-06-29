@@ -13,7 +13,6 @@
 
 function appendProductCard(product) {
 	const imgSrc = "http://" + product.image.slice(-product.image.length+2)
-	console.log(imgSrc)
 	const image = document.createElement("img")
 	image.className = "product-img"
 	image.src = imgSrc
@@ -42,7 +41,7 @@ function appendProductCard(product) {
 	button.className = "primary-button product-button"
 	button.innerHTML = "Comprar"
 
-	const productCard = document.createElement("div")
+	const productCard = document.createElement("article")
 	productCard.className = "product"
 	productCard.append(image)
 	productCard.append(name)
