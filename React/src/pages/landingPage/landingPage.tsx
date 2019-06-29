@@ -1,9 +1,10 @@
 import * as React from 'react'
+import Newsletter from '../../components/newsletter/newsletter'
 
 const LandingPage: React.FC<Props> = (props) => {
 	return (
 		<div>
-			<h1>teste</h1>
+			<Newsletter/>
 		</div>
 	)
 }

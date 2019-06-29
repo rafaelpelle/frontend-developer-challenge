@@ -7,10 +7,10 @@ const AppFooter: React.FC<Props> = (props) => {
 	}
 
 	return (
-		<footer className="app-footer">
+		<footer className='app-footer'>
 			<p>
-				Testando suas habilidades em HTML, CSS e JS.<br/>
-				Linx Impulse<br/>
+				Testando suas habilidades em HTML, CSS e JS.<br />
+				Linx Impulse<br />
 				{ getCurrentYear() }
 			</p>
 		</footer>
