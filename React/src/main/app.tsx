@@ -6,6 +6,7 @@ import { IRootReducer } from '../utils/interfaces'
 import { history } from '../router/history'
 import MyRoutes from '../router/myRoutes'
 import AppHeader from '../components/appHeader/appHeader'
+import AppFooter from '../components/appFooter/appFooter'
 
 require('./app.css')
 
@@ -25,6 +26,7 @@ const App: React.FC<Props> = (props) => {
 				<Switch>
 					<MyRoutes />
 				</Switch>
+				<AppFooter />
 			</div>
 		</Router>
 	)
