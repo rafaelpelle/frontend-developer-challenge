@@ -1,9 +1,11 @@
 import * as React from 'react'
 import Newsletter from '../../components/newsletter/newsletter'
+import ProductGrid from '../../components/productGrid/productGrid'
 
 const LandingPage: React.FC<Props> = (props) => {
 	return (
 		<div>
+			<ProductGrid/>
 			<Newsletter/>
 		</div>
 	)

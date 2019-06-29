@@ -1,0 +1,30 @@
+.products-container {
+    text-align: center;
+}
+
+.products-container > .primary-button {
+    margin-top: 43px;
+}
+
+.products-container > p {
+    color: #888888;
+    margin: 0;
+}
+
+.products-header {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 16px;
+    color: #888888;
+    padding-top: 49px;
+    padding-bottom: 50px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 40px;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
