@@ -53,19 +53,19 @@
 						<p class="input-label">
 							Nome do seu amigo:
 						</p>
-						<input type="text" name="friendName">
+						<input type="text" id="friend-name">
 					</div>
 					<div class="input-item">
 						<p class="input-label">
 							E-mail:
 						</p>
-						<input type="email" name="friendEmail">
+						<input type="email" id="friend-email">
 					</div>
 				</div>
-				<button class="primary-button ">
-					Enviar agora
-				</button>
 			</form>
+			<button class="primary-button" onclick="validateNewsletterValues()">
+				Enviar agora
+			</button>
 		</div>
 	</section>
 
@@ -73,9 +73,11 @@
 		<p>
 			Testando suas habilidades em HTML, CSS e JS.<br/>
 			Linx Impulse<br/>
-			2019
+			<span id="date"/>
 		</p>
 	</footer>
 	<script src="scripts/fetchContent.js"></script>
+	<script src="scripts/date.js"></script>
+	<script src="scripts/validator.js"></script>
 </body>
 </html>
