@@ -1,15 +1,21 @@
 import * as React from 'react'
 import { useInput, useEmailInput } from '../../hooks/useInput'
+import { validName, validEmail } from '../../utils/validators'
 
 require('./newsletter.css')
-
 
 const Newsletter: React.FC<Props> = (props) => {
 	const useName = useInput('')
 	const useEmail = useEmailInput('')
 
 	function validateNewsletterValues() {
-
+		if (!validName(useName.value)) {
+			alert('Este nome não é válido!')
+		} else if (!validEmail(useEmail.value)) {
+			alert('Este e-mail não é válido!')
+		} else {
+			alert('Seu amigo foi cadastrado!')
+		}
 	}
 
 	return (

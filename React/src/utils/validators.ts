@@ -112,6 +112,10 @@ export const validPhone = (text: string) => {
 	return intRegex.test(removePhoneMask(text))
 }
 
+export const validName = (name: string) => {
+	return name.length > 0
+}
+
 export const validEmail = (email: string) => {
 	return emailRegex.test(email)
 }
