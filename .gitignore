@@ -1,2 +1,10 @@
 # IDE SETTINGS
 .idea/
+.vs/
+
+# PRODUCTION BUILD
+/React/dist
+/React/dist.zip
+
+# DEPENDENCIES
+/React/node_modules/
