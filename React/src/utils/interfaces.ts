@@ -6,6 +6,15 @@ export interface IUserReducer {
 	accessToken: string,
 }
 
-/////////////////////////////////////////////////////////////////
-/////////////////////////// FUNCTIONS ///////////////////////////
-/////////////////////////////////////////////////////////////////
+export interface ProductInterface {
+	id: number
+	name: string
+	image: string
+	oldPrice: number
+	price: number
+	description: string
+	installments: {
+		count: number
+		value: number
+	}
+}

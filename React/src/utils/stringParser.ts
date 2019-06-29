@@ -1,3 +1,18 @@
+export function handleMoneyFormat(value: string | number, currency: string) {
+	if (!value) {
+		value = 0
+	}
+	const formattedValue = Number(value).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, '$1.')
+	switch (currency) {
+		case 'USD':
+			return 'US$ ' + formattedValue
+		case 'EUR':
+			return formattedValue + ' €'
+		default:
+			return 'R$ ' + formattedValue
+	}
+}
+
 export type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>
 
 export function handleCPF(cpf: string): string {
