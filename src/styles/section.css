@@ -19,10 +19,12 @@
     padding-bottom: 50px;
 }
 .section-header.second {
-    padding-top: 174px;
+    margin: 0;
+    padding-top: 164px;
     padding-bottom: 44px;
 }
 .section-header.small {
+    margin: 0;
     padding-bottom: 39px;
     font-size: 14px;
     font-weight: normal;
@@ -41,13 +43,71 @@
     width: 260px;
     height: 39px;
 }
+.products-container > .primary-button {
+    margin-top: 43px;
+}
 .newsletter-container > .primary-button {
     margin-top: 50px;
     margin-bottom: 142px;
 }
 
 
-/* #############  FORM ############# */
+/* #############  GRID  ############# */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 40px;
+}
+.products-grid {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+/* #############  PRODUCT  ############# */
+.product {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+}
+.product-image {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+.product > p {
+    color: #888888;
+    line-height: 16px;
+    font-size: 12px;
+}
+.product-name {
+    font-size: 14px !important;
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+.product-description {
+    margin: 0;
+}
+.product-oldPrice {
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+.product-price {
+    font-size: 16px !important;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 7px;
+}
+.product-installments {
+    margin: 0;
+}
+.product-button {
+    width: 100% !important;
+    height: 30px !important;
+    margin-top: 10px !important;
+}
+
+/* #############  FORM  ############# */
 .input-container {
     display: flex;
     align-items: center;

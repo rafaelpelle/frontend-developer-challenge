@@ -3,8 +3,9 @@ fetch('https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1'
 		return response.json()
 	})
 	.then((data) => {
-		console.log(data.products)
-		console.log(data.nextPage)
+		for(product of data.products) {
+			appendProductCard(product)
+		}
 	})
 	.catch((error) => {
 		console.log(error)
