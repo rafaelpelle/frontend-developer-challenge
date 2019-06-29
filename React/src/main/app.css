@@ -17,7 +17,6 @@ body {
 button {
     cursor: pointer;
 }
-
 .primary-button {
     background-color: #ffffff;
     color: #888888;
@@ -35,4 +34,18 @@ button {
 .newsletter-container > .primary-button {
     margin-top: 50px;
     margin-bottom: 142px;
+}
+
+.loader {
+    border: 4px solid #eeeeee; /* Light grey */
+    border-top: 4px solid #888888; /* Blue */
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    animation: spin .5s linear infinite;
+    margin: 0 auto;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

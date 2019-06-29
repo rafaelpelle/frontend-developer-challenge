@@ -7,17 +7,20 @@ require('./productGrid.css')
 const ProductGrid: React.FC<Props> = (props) => {
 	const [nextPage, setNextPage] = React.useState('frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1')
 	const [products, setProducts] = React.useState([])
+	const [loading, setLoading] = React.useState(false)
 
 	React.useEffect(() => {
 		fetchProductPage()
 	}, [])
 
 	function fetchProductPage() {
+		setLoading(true)
 		fetch('https://' + nextPage)
 			.then(handleError)
 			.then(handleSuccess)
-			.catch(error => {
+			.catch((error) => {
 				alert('Houve um problema:\n' + error)
+				setLoading(false)
 			})
 	}
 
@@ -33,20 +36,19 @@ const ProductGrid: React.FC<Props> = (props) => {
 		currentProducts.push(...data.products)
 		setProducts(currentProducts)
 		setNextPage(data.nextPage)
+		setLoading(false)
 	}
 
 	return (
 		<section className='products-container'>
-			<p className='products-header'>
-				Sua seleção especial
-			</p>
+			<p className='products-header'>Sua seleção especial</p>
 			<section className='products-grid' id='products-grid'>
 				{ products.map((product: ProductInterface, index: number) => {
-					return <ProductCard product={ product } key={ index }/>
+					return <ProductCard product={ product } key={ index } />
 				}) }
 			</section>
-			<button className='primary-button' onClick={ fetchProductPage }>
-				Ainda mais produtos aqui!
+			<button className={ 'primary-button' } onClick={ fetchProductPage }>
+				{ loading ? <div className='loader' /> : 'Ainda mais produtos aqui!' }
 			</button>
 		</section>
 	)
@@ -62,7 +64,7 @@ export default ProductGrid
 /////////////////////////////////////////////////////////////////
 interface DataInterface {
 	products: ProductInterface[]
-	nextPage: string,
+	nextPage: string
 }
 
 interface OwnState {}
