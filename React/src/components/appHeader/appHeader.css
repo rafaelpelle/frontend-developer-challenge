@@ -1,0 +1,58 @@
+.app-header {
+    background-color: #707070;
+    border: 1px solid #707070;
+    text-align: center;
+}
+
+
+/* #############  FONT  ############# */
+.app-header > p {
+    color: #ffffff;
+    margin: 0;
+}
+.large-header {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 49px;
+}
+.medium-header {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 24px;
+    padding-top: 69px !important;
+}
+.small-header {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16px;
+    margin-top: 24px !important;
+    margin-bottom: 50px !important;
+}
+
+
+/* #############  BUTTONS  ############# */
+.app-header > nav {
+    padding-bottom: 49px;
+}
+.app-header > nav > button {
+    background-color: #ffffff;
+    color: #888888;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 16px;
+    height: 40px;
+    width: 100%;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.16);
+}
+
+
+/* #############  GRID  ############# */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-gap: 40px;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

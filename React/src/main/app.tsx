@@ -5,10 +5,9 @@ import { Router, Switch } from 'react-router-dom'
 import { IRootReducer } from '../utils/interfaces'
 import { history } from '../router/history'
 import MyRoutes from '../router/myRoutes'
+import AppHeader from '../components/appHeader/appHeader'
 
 require('./app.css')
-
-
 
 const App: React.FC<Props> = (props) => {
 	React.useEffect(() => {
@@ -22,6 +21,7 @@ const App: React.FC<Props> = (props) => {
 	return (
 		<Router history={ history }>
 			<div>
+				<AppHeader />
 				<Switch>
 					<MyRoutes />
 				</Switch>
@@ -41,17 +41,13 @@ export default connect<StateProps, DispatchProps, OwnProps>(mapStateToProps, map
 //////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////// INTERFACES /////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
-interface OwnState {
-}
+interface OwnState {}
 
-interface OwnProps {
-}
+interface OwnProps {}
 
-interface StateProps {
-}
+interface StateProps {}
 
-interface DispatchProps {
-}
+interface DispatchProps {}
 
 type Props = StateProps & DispatchProps & OwnProps
 type State = OwnState

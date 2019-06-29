@@ -11,4 +11,10 @@ body {
     width: 100%;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+button {
+    cursor: pointer;
+}
+
